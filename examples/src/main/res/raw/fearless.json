@@ -1,0 +1,74 @@
+{
+	"type"  : "layer",
+		
+		"name": "fearless",
+
+		"class": "com.music.rihanna.graphics.GLPlaneCustomAnimationGraphicEngine",
+
+		"enable": true,			
+
+		"parameters": {
+			"isLoop" : false,
+			"animationRate" : 0.06,
+			"is2d" : true,
+			"height": 6.25, 
+			"width": 25,
+			"tiling": 0,
+			"ratio" : 1,
+			"isAlphaTint" : true,
+			"alpha" : 1.0,
+			"red" : 1.0,
+			"green" : 1.0,
+			"blue" : 1.0			
+		},
+
+		"position": {
+			"x": -19.434,
+			"y": -2.734,
+			"z": 8
+		},
+
+		"rotation": {
+			"x": 0.0,
+			"y": 0.0,
+			"z": 0.0
+		},
+
+		"scale": {
+			"x": 1.0,
+			"y": 1.0,
+			"z": 1.0
+		},
+
+		"selectable": true,
+
+		"light": "rajawali.lights.PointLight",
+
+		"obj": "",
+
+		"material": "com.cellfish.livewallpaper.materials.BasicMaterial", 
+
+		"textures": [
+		    {
+				"name": "fearless",
+				"increment" : 1,
+				"bitmaps": ["fearless_00.png", "fearless_21.png"]
+		    }
+		],
+
+		"sensorEvent": [],
+
+		"touchEvent": [],
+		
+	"interaction": [
+			{
+				"state" : "initial",
+				"event" : "click",
+				"next_state" : "initial",
+				"layer" : "fearless",
+	  			"class" : "com.music.rihanna.interaction.ReverseAnimation",
+	 	 		"parameters" : {}
+		}
+	
+		]
+}

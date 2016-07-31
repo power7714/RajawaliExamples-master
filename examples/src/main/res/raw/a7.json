@@ -1,0 +1,74 @@
+{
+  "type"  : "layer",
+
+  "name": "a7",
+
+  "class": "com.monyetmabuk.rajawali.tutorials.graphicengine.graphics.GLPlaneCustomAnimationGraphicEngine",
+
+  "enable": true,
+
+  "parameters": {
+    "isLoop" : false,
+    "animationRate" : 0.06,
+    "is2d" : true,
+    "height": 6.25,
+    "width": 6.25,
+    "tiling": 0,
+    "ratio" : 1,
+    "isAlphaTint" : true,
+    "alpha" : 1.0,
+    "red" : 1.0,
+    "green" : 1.0,
+    "blue" : 1.0
+  },
+
+  "position": {
+    "x": -14.941,
+    "y": 7.227,
+    "z": 10
+  },
+
+  "rotation": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+
+  "scale": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+  },
+
+  "selectable": true,
+
+  "light": "org.rajawali3d.lights.PointLight",
+
+  "obj": "",
+
+  "material": "com.monyetmabuk.rajawali.tutorials.graphicengine.graphics.BasicMaterial",
+
+  "textures": [
+    {
+      "name": "7",
+      "increment" : 1,
+      "bitmaps": ["a7_00.png", "a7_07.png"]
+    }
+  ],
+
+  "sensorEvent": [],
+
+  "touchEvent": [],
+
+  "interaction": [
+    {
+      "state" : "initial",
+      "event" : "click",
+      "next_state" : "initial",
+      "layer" : "a7",
+      "class" : "com.monyetmabuk.rajawali.tutorials.graphicengine.utils.ReverseAnimation",
+      "parameters" : {}
+    }
+
+  ]
+}
